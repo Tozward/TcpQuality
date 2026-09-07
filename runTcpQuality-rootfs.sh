@@ -128,9 +128,6 @@ configure_interactive_args() {
     ALLOW_SPEEDTEST=1
   fi
 
-  answer=$(prompt_answer "上传并生成在线报告链接？隐私模式默认不上传（回车默认 'n'）[y/n]：" "n")
-  answer_is_no "$answer" && upload_rank=1
-
   if [ "$run_route" -eq 0 ]; then
     if [ "$run_edu" -eq 0 ] && [ "$run_intl" -eq 0 ] && [ "$run_speedtest" -eq 0 ]; then
       die "未选择任何测试项目"
@@ -157,7 +154,7 @@ configure_interactive_args() {
     selected_args=("--all")
   fi
 
-  [ "$upload_rank" -eq 0 ] && selected_args+=("--no-rank-upload")
+  selected_args+=("--no-rank-upload")
 
   if [ "${#selected_args[@]}" -gt 0 ]; then
     set -- "${selected_args[@]}"
