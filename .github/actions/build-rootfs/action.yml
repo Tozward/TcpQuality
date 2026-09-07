@@ -94,17 +94,17 @@ runs:
         install -D -m 0644 nexttrace-tiny-COPYING \
           rootfs/usr/share/doc/nexttrace-tiny/COPYING
         cat > rootfs/usr/share/doc/nexttrace-tiny/NOTICE <<EOF
-NextTrace / nexttrace-tiny
+        NextTrace / nexttrace-tiny
 
-Version: ${nexttrace_tag}
-License: GNU General Public License, version 3 (GPLv3)
-License text: /usr/share/doc/nexttrace-tiny/COPYING
+        Version: ${nexttrace_tag}
+        License: GNU General Public License, version 3 (GPLv3)
+        License text: /usr/share/doc/nexttrace-tiny/COPYING
 
-Source repository: ${nexttrace_source_url}
-Source archive: ${nexttrace_source_archive}
-Release binary: ${nexttrace_url}
-Release binary SHA256: ${nexttrace_digest#sha256:}
-EOF
+        Source repository: ${nexttrace_source_url}
+        Source archive: ${nexttrace_source_archive}
+        Release binary: ${nexttrace_url}
+        Release binary SHA256: ${nexttrace_digest#sha256:}
+        EOF
         printf '%s\n' "$nexttrace_source_url" > rootfs/etc/tcpquality-nexttrace-source
         tar --numeric-owner --xattrs --acls \
           -C rootfs -cJf "dist/tcpquality-rootfs-${TARGET_ARCH}.tar.xz" .
