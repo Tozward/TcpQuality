@@ -1585,8 +1585,18 @@ get_public_ipv6() {
 }
 
 detect_ip_stack() {
-  get_public_ipv4 || true
-  get_public_ipv6 || true
+  IPV4_PUBLIC=""
+  IPV6_PUBLIC=""
+  IPV4_WORK=0
+  IPV6_WORK=0
+
+  if ip -4 route get 1.1.1.1 >/dev/null 2>&1; then
+    IPV4_WORK=1
+  fi
+
+  if ip -6 route get 2606:4700:4700::1111 >/dev/null 2>&1; then
+    IPV6_WORK=1
+  fi
 }
 
 ipv4_available() {
@@ -1958,25 +1968,7 @@ build_asn_map() {
 }
 
 append_server_asn_meta() {
-  local ip_file="$1" map_file="$2" response_file
-  [ -s "$ip_file" ] || return 0
-  response_file=$(mktemp)
-  if curl -4 -fsSL --connect-timeout 5 --max-time 20 \
-      -X POST -H 'content-type: text/plain; charset=utf-8' \
-      --data-binary "@$ip_file" "$ROUTE_ASN_API" > "$response_file" 2>/dev/null; then
-    awk -F'\t' '
-      NR == 1 { next }
-      {
-        ip = tolower($1)
-        asn = $2
-        owner = $3
-        sub(/^[Aa][Ss]/, "", asn)
-        gsub(/[|\r\n]+/, " ", owner)
-        if (ip ~ /^[0-9A-Fa-f:.]+$/ && asn ~ /^[0-9]+$/) print ip "|" asn "|" owner
-      }
-    ' "$response_file" >> "$map_file"
-  fi
-  rm -f "$response_file"
+  return 0
 }
 
 route_label_from_ip_trace() {
@@ -4052,7 +4044,6 @@ SPEEDTEST_APPLECDN_USER_AGENT="${SPEEDTEST_APPLECDN_USER_AGENT:-networkQuality/1
 SPEEDTEST_TOS_CT_IP="${TOS_CT_IP:-42.81.80.86}"
 SPEEDTEST_TOS_CU_IP="${TOS_CU_IP:-221.194.175.109}"
 SPEEDTEST_TOS_CM_IP="${TOS_CM_IP:-120.255.0.180}"
-SPEEDTEST_IPV6_PROBE_URL="${SPEEDTEST_IPV6_PROBE_URL:-https://api6.ipify.org}"
 SPEEDTEST_IPV6_CHECKED=0
 SPEEDTEST_IPV6_AVAILABLE=0
 SPEEDTEST_TOS_REMOTE_LOADED=0
@@ -5470,27 +5461,20 @@ speedtest_ipv4_available() {
 }
 
 speedtest_ipv6_available() {
-  local response
   if [ "$SPEEDTEST_IPV6_CHECKED" -eq 1 ]; then
     [ "$SPEEDTEST_IPV6_AVAILABLE" -eq 1 ]
     return
   fi
+
   SPEEDTEST_IPV6_CHECKED=1
   SPEEDTEST_IPV6_AVAILABLE=0
-  if ipv6_available; then
-    SPEEDTEST_IPV6_AVAILABLE=1
-    return 0
-  fi
-  command -v curl >/dev/null 2>&1 || return 1
-  response=$(curl -6 -fsS --connect-timeout 5 --max-time 8 \
-    "$SPEEDTEST_IPV6_PROBE_URL" 2>/dev/null | \
-    awk 'NR == 1 {gsub(/^[[:space:]]+|[[:space:]]+$/, ""); print}')
-  if is_valid_ipv6 "$response"; then
-    IPV6_PUBLIC="$response"
+
+  if ipv6_available || ip -6 route get 2606:4700:4700::1111 >/dev/null 2>&1; then
     IPV6_WORK=1
     SPEEDTEST_IPV6_AVAILABLE=1
     return 0
   fi
+
   return 1
 }
 
