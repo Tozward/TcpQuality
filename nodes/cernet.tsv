@@ -14,7 +14,7 @@ cernet2	6	江苏	CERNET2	cernet2-js-v6.ibsgss.uk	2001:da8:1007::9999	443	www.nju
 cernet	4	浙江	CERNET	cernet-zj-v4.ibsgss.uk	210.33.16.1	443	www.nbu.edu.cn				
 cernet2	6	浙江	CERNET2	cernet2-zj-v6.ibsgss.uk	2001:da8:e028:1000::122	443	www.nbu.edu.cn				
 cernet	4	安徽	CERNET	cernet-ah-v4.ibsgss.uk	210.45.240.198	443	www.hfut.edu.cn	bak.cernet-ah-v4.ibsgss.uk	210.45.96.212	443	www.ahmu.edu.cn
-cernet2	6	安徽	CERNET2	cernet2-ah-v6.ibsgss.uk	2001:250:5401:160::55	443	www.ahu.edu.cn	bak.cernet2-ah-v6.ibsgss.uk	2001:da8:d813:195::72	443	www.ahnu.edu.cn
+cernet2	6	安徽	CERNET2	cernet2-ah-v6.ibsgss.uk	2001:250:5401:160::55	443	www.ahu.edu.cn	bak.cernet2-ah-v6.ibsgss.uk	2001:da8:d813:195::71	443	www.ahnu.edu.cn
 cernet	4	福建	CERNET	cernet-fj-v4.ibsgss.uk	219.229.81.211	443	www.xmu.edu.cn				
 cernet2	6	福建	CERNET2	cernet2-fj-v6.ibsgss.uk	2001:da8:e800:251c::211	443	www.xmu.edu.cn				
 cernet	4	江西	CERNET	cernet-jx-v4.ibsgss.uk	219.229.232.50	443	www.jxust.edu.cn				
@@ -31,7 +31,7 @@ cernet	4	广东	CERNET	cernet-gd-v4.ibsgss.uk	202.116.64.8	443	www.sysu.edu.cn
 cernet2	6	广东	CERNET2	cernet2-gd-v6.ibsgss.uk	2001:da8:2000:2193::28	443	www.scut.edu.cn				
 cernet	4	海南	CERNET	cernet-hi-v4.ibsgss.uk	210.37.79.21	443	www.hainanu.edu.cn	bak.cernet-hi-v4.ibsgss.uk	210.37.79.21	443	www.muhn.edu.cn
 cernet2	6	海南	CERNET2	cernet2-hi-v6.ibsgss.uk	2001:250:3801:207:2::a	443	www.hainanu.edu.cn	bak.cernet2-hi-v6.ibsgss.uk	2001:250:3802:2001::13	443	www.muhn.edu.cn
-cernet	4	四川	CERNET	cernet-sc-v4.ibsgss.uk	211.83.159.99	443	www.scu.edu.cn				
+cernet	4	四川	CERNET	cernet-sc-v4.ibsgss.uk	211.83.159.100	443	www.scu.edu.cn				
 cernet2	6	四川	CERNET2	cernet2-sc-v6.ibsgss.uk		443	www.scu.edu.cn				
 cernet	4	贵州	CERNET	cernet-gz-v4.ibsgss.uk	210.40.12.58	443	www.gzu.edu.cn				
 cernet2	6	贵州	CERNET2	cernet2-gz-v6.ibsgss.uk	2001:250:2c00::60	443	www.gzu.edu.cn				
