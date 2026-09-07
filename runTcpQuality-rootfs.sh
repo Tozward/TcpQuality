@@ -18,13 +18,13 @@ ROOTFS_SHA256="${TCPQUALITY_ROOTFS_SHA256:-}"
 DEBIAN_SUITE="${TCPQUALITY_DEBIAN_SUITE:-bookworm}"
 ROOTFS_RELEASE_TAG="${TCPQUALITY_ROOTFS_RELEASE_TAG:-v1.latest}"
 ROOTFS_SOURCE="${TCPQUALITY_ROOTFS_SOURCE:-}"
-ROOTFS_SOURCE_ORDER="${TCPQUALITY_ROOTFS_SOURCE_ORDER:-github ibsgss}"
+ROOTFS_SOURCE_ORDER="${TCPQUALITY_ROOTFS_SOURCE_ORDER:-github}"
 ROOTFS_GITHUB_REPOSITORY="${TCPQUALITY_ROOTFS_GITHUB_REPOSITORY:-ibsgss/TcpQuality}"
 ROOTFS_IBSGSS_BASE="${TCPQUALITY_ROOTFS_IBSGSS_BASE:-https://tcpquality.ibsgss.uk/rootfs/releases}"
 if [ -z "${TCPQUALITY_RAW_BASE:-}" ]; then
   case "$ROOTFS_RELEASE_TAG" in
-    v1beta|v1beta.latest) TCPQUALITY_RAW_BASE="https://raw.githubusercontent.com/ibsgss/TcpQuality/v1beta" ;;
-    *) TCPQUALITY_RAW_BASE="https://raw.githubusercontent.com/ibsgss/TcpQuality/main" ;;
+    v1beta|v1beta.latest) TCPQUALITY_RAW_BASE="https://raw.githubusercontent.com/Tozward/TcpQuality/v1beta" ;;
+    *) TCPQUALITY_RAW_BASE="https://raw.githubusercontent.com/Tozward/TcpQuality/main" ;;
   esac
 fi
 TCPQUALITY_TCP_INFO_SOURCE="${TCPQUALITY_TCP_INFO_SOURCE:-}"
@@ -105,7 +105,7 @@ answer_is_no() {
 }
 
 configure_interactive_args() {
-  local answer run_route=0 run_edu=0 run_intl=0 run_speedtest=0 upload_rank=1
+  local answer run_route=0 run_edu=0 run_intl=0 run_speedtest=0 upload_rank=0
   local -a selected_args=()
 
   print_interactive_intro
@@ -128,8 +128,8 @@ configure_interactive_args() {
     ALLOW_SPEEDTEST=1
   fi
 
-  answer=$(prompt_answer "上传并生成在线报告链接？（回车默认 'y'）[y/n]：" "y")
-  answer_is_no "$answer" && upload_rank=0
+  answer=$(prompt_answer "上传并生成在线报告链接？隐私模式默认不上传（回车默认 'n'）[y/n]：" "n")
+  answer_is_no "$answer" && upload_rank=1
 
   if [ "$run_route" -eq 0 ]; then
     if [ "$run_edu" -eq 0 ] && [ "$run_intl" -eq 0 ] && [ "$run_speedtest" -eq 0 ]; then
@@ -1049,7 +1049,7 @@ resolve_tcpquality_asset() {
   fi
   raw_base="${TCPQUALITY_RAW_BASE:-}"
   [ -n "$raw_base" ] && raw_bases+=("${raw_base%/}")
-  upstream_base="${TCPQUALITY_ASSET_BASE:-https://raw.githubusercontent.com/ibsgss/TcpQuality/main}"
+  upstream_base="${TCPQUALITY_ASSET_BASE:-https://raw.githubusercontent.com/Tozward/TcpQuality/main}"
   if [ -n "$upstream_base" ] && [ "${upstream_base%/}" != "${raw_base%/}" ]; then
     raw_bases+=("${upstream_base%/}")
   fi
