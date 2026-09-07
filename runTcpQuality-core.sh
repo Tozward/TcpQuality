@@ -280,8 +280,8 @@ PARALLEL_EXPLICIT=0
 TEST_CERNET=0
 TEST_ALL=0
 INCLUDE_DEFAULT_ROUTE="${TCPQUALITY_INCLUDE_DEFAULT_ROUTE:-0}"
-UPLOAD_REPORT=1
-REPORT_UPLOAD_FORCED_OFF=0
+UPLOAD_REPORT=0
+REPORT_UPLOAD_FORCED_OFF=1
 ONLY_IPV4=0
 ONLY_IPV6=0
 ONLY_LARGE=0
@@ -755,7 +755,6 @@ parse_args() {
       --intl)
         INTL_REQUESTED=1
         INTERNATIONAL_ENABLED=1
-        [ "$REPORT_UPLOAD_FORCED_OFF" -eq 1 ] || UPLOAD_REPORT=1
         shift
         ;;
       --no-rank-upload)
@@ -6126,7 +6125,6 @@ collect_speedtest_results() {
     exit 1
   }
   load_remote_speedtest_nodes || true
-  ensure_public_ips_for_rank
   install_speedtest_counter_dependency || true
   if ! command -v iptables &>/dev/null; then
     SPEEDTEST_RANK_ELIGIBLE=0
@@ -6153,12 +6151,13 @@ collect_speedtest_results() {
       echo -e "${DIM}[debug] 重传去重: eBPF 不可用，使用 TCP_INFO/nstat 原始重传事件${NC}" >&2
     fi
   fi
-  if request_rank_session; then
-    [ "$DEBUG_MODE" -eq 1 ] && echo -e "${DIM}[debug] rank session 已获取${NC}" >&2
-  else
-    [ -n "$SPEEDTEST_RANK_DISABLED_REASON" ] || SPEEDTEST_RANK_DISABLED_REASON="rank_session_request_failed"
-    [ "$DEBUG_MODE" -eq 1 ] && echo -e "${DIM}[debug] rank session 获取失败：$SPEEDTEST_RANK_DISABLED_REASON，本次报告不会进入排名${NC}" >&2
-  fi
+  SPEEDTEST_RANK_ELIGIBLE=0
+  SPEEDTEST_RANK_DISABLED_REASON="privacy_mode"
+  RANK_SESSION_ID=""
+  RANK_SESSION_TOKEN=""
+  RANK_SESSION_STARTED_AT=""
+  RANK_SESSION_EXPIRES_AT=""
+  RANK_SESSION_IP4=""
   SPEEDTEST_IFACE=$(ip route show default 2>/dev/null | awk '{print $5; exit}')
   [ -n "$SPEEDTEST_IFACE" ] || {
     echo -e "${RED}[X] 无法识别默认网络接口${NC}"
