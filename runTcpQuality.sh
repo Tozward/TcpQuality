@@ -13,28 +13,18 @@
 
 set -Eeuo pipefail
 
-RAW_BASE="${TCPQUALITY_RAW_BASE:-https://raw.githubusercontent.com/ibsgss/TcpQuality/main}"
+RAW_BASE="${TCPQUALITY_RAW_BASE:-https://raw.githubusercontent.com/Tozward/TcpQuality/main}"
 case "$RAW_BASE" in
   http://*|https://*) ;;
   *)
     echo "[!] TCPQUALITY_RAW_BASE 非法，已回退到官方 GitHub 源" >&2
-    RAW_BASE="https://raw.githubusercontent.com/ibsgss/TcpQuality/main"
+    RAW_BASE="https://raw.githubusercontent.com/Tozward/TcpQuality/main"
     ;;
 esac
 RAW_BASE="${RAW_BASE%/}"
 export TCPQUALITY_RAW_BASE="$RAW_BASE"
 if [ -z "${TCPQUALITY_ROOTFS_SOURCE_ORDER:-}" ]; then
-  case "$RAW_BASE" in
-    *tcpquality.ibsgss.uk*)
-      export TCPQUALITY_ROOTFS_SOURCE_ORDER="ibsgss github"
-      ;;
-    *githubusercontent.com*|*github.com*)
-      export TCPQUALITY_ROOTFS_SOURCE_ORDER="github ibsgss"
-      ;;
-    *)
-      export TCPQUALITY_ROOTFS_SOURCE_ORDER="ibsgss github"
-      ;;
-  esac
+  export TCPQUALITY_ROOTFS_SOURCE_ORDER="github"
 fi
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" 2>/dev/null && pwd || printf '.')
 LOCAL_ROOTFS="$SCRIPT_DIR/runTcpQuality-rootfs.sh"
