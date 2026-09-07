@@ -85,7 +85,7 @@ bootstrap_nixos_environment() {
           "PATH=$PATH" \
           "TERM=${TERM:-dumb}" \
           "LANG=${LANG:-C.UTF-8}" \
-          "GET_NODES_URL=${GET_NODES_URL:-}" \
+          "TCPQUALITY_NODES_BASE=${TCPQUALITY_NODES_BASE:-}" \
           "TCPQUALITY_REPORT_API=${TCPQUALITY_REPORT_API:-}" \
           TCPQUALITY_NIX_BOOTSTRAPPED=1 \
           "TCPQUALITY_NIX_TEMP_SCRIPT=$1" \
@@ -109,7 +109,7 @@ IPV4_PUBLIC=""
 IPV6_PUBLIC=""
 IPV4_WORK=0
 IPV6_WORK=0
-GET_NODES_URL="${GET_NODES_URL:-https://tcpquality.ibsgss.uk/getNodes}"
+NODES_BASE="${TCPQUALITY_NODES_BASE:-https://raw.githubusercontent.com/Tozward/TcpQuality/main/nodes}"
 GET_NODES_LAST_URL=""
 GET_NODES_LAST_ERROR=""
 GET_NODES_LAST_STATUS=""
@@ -532,9 +532,7 @@ load_remote_nodes() {
   command -v curl &>/dev/null || return 1
   tmp=$(mktemp)
   err="${tmp}.err"
-  sep="?"
-  [[ "$GET_NODES_URL" == *"?"* ]] && sep="&"
-  url="${GET_NODES_URL}${sep}format=tsv&scope=${scope}"
+  url="${NODES_BASE}/${scope}.tsv"
   if ! curl -4 -fsSL --connect-timeout 5 --max-time 30 "$url" > "$tmp" 2>"$err"; then
     curl_status=$?
     if ! curl -fsSL --connect-timeout 5 --max-time 30 "$url" > "$tmp" 2>>"$err"; then
@@ -4223,9 +4221,7 @@ load_remote_speedtest_nodes() {
   command -v curl &>/dev/null || return 1
 
   tmp=$(mktemp)
-  sep="?"
-  [[ "$GET_NODES_URL" == *"?"* ]] && sep="&"
-  url="${GET_NODES_URL}${sep}format=tsv&scope=tos"
+  url="${NODES_BASE}/tos.tsv"
   if ! curl -fsSL --connect-timeout 5 --max-time 30 "$url" > "$tmp" 2>/dev/null; then
     rm -f "$tmp"
     return 1
@@ -4287,9 +4283,7 @@ load_remote_applecdn6_nodes() {
   command -v curl &>/dev/null || return 1
 
   tmp=$(mktemp)
-  sep="?"
-  [[ "$GET_NODES_URL" == *"?"* ]] && sep="&"
-  url="${GET_NODES_URL}${sep}format=tsv&scope=apple6"
+  url="${NODES_BASE}/apple6.tsv"
   if ! curl -fsSL --connect-timeout 5 --max-time 30 "$url" > "$tmp" 2>/dev/null; then
     rm -f "$tmp"
     return 1
