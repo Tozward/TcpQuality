@@ -1,42 +1,42 @@
 type	family	province	isp	host	ip	port	target	backup_host	backup_ip	backup_port	backup_target
 cdn	4	河北	电信	he-ct-v4.ibsgss.uk	219.148.62.1	80	he-ct-v4.ip.zstaticcdn.com	bak.he-ct-v4.ibsgss.uk	144.7.111.241	80	he-xiongan-ct-v4.ip.zstaticcdn.com
-cdn	4	河北	联通	he-cu-v4.ibsgss.uk	110.249.198.54	80	he-cu-v4.ip.zstaticcdn.com	bak.he-cu-v4.ibsgss.uk	120.52.92.249	80	he-langfang-cu-v4.ip.zstaticcdn.com
-cdn	4	河北	移动	he-cm-v4.ibsgss.uk	111.63.63.207	80	he-cm-v4.ip.zstaticcdn.com	bak.he-cm-v4.ibsgss.uk		80	sjz-cm-v4.ip.zstaticcdn.com
-cdn	4	山西	电信	sx-ct-v4.ibsgss.uk	113.24.210.59	80	sx-ct-v4.ip.zstaticcdn.com	bak.sx-ct-v4.ibsgss.uk	1.71.6.232	80	sx-taiyuan-ct-v4.ip.zstaticcdn.com
+cdn	4	河北	联通	he-cu-v4.ibsgss.uk	110.249.198.53	80	he-cu-v4.ip.zstaticcdn.com	bak.he-cu-v4.ibsgss.uk	120.52.92.249	80	he-langfang-cu-v4.ip.zstaticcdn.com
+cdn	4	河北	移动	he-cm-v4.ibsgss.uk	111.62.113.2	80	he-cm-v4.ip.zstaticcdn.com	bak.he-cm-v4.ibsgss.uk		80	sjz-cm-v4.ip.zstaticcdn.com
+cdn	4	山西	电信	sx-ct-v4.ibsgss.uk	113.24.210.58	80	sx-ct-v4.ip.zstaticcdn.com	bak.sx-ct-v4.ibsgss.uk	1.71.6.232	80	sx-taiyuan-ct-v4.ip.zstaticcdn.com
 cdn	4	山西	联通	sx-cu-v4.ibsgss.uk	121.30.176.170	80	sx-cu-v4.ip.zstaticcdn.com	bak.sx-cu-v4.ibsgss.uk	60.220.186.44	80	sx-changzhi-cu-v4.ip.zstaticcdn.com
-cdn	4	山西	移动	sx-cm-v4.ibsgss.uk	183.201.125.189	80	sx-cm-v4.ip.zstaticcdn.com	bak.sx-cm-v4.ibsgss.uk		80	ty-cm-v4.ip.zstaticcdn.com
+cdn	4	山西	移动	sx-cm-v4.ibsgss.uk	183.201.125.187	80	sx-cm-v4.ip.zstaticcdn.com	bak.sx-cm-v4.ibsgss.uk		80	ty-cm-v4.ip.zstaticcdn.com
 cdn	4	辽宁	电信	ln-ct-v4.ibsgss.uk	42.202.173.160	80	ln-ct-v4.ip.zstaticcdn.com	bak.ln-ct-v4.ibsgss.uk	123.187.241.248	80	ln-liaoyang-ct-v4.ip.zstaticcdn.com
 cdn	4	辽宁	联通	ln-cu-v4.ibsgss.uk	42.59.0.146	80	ln-cu-v4.ip.zstaticcdn.com	bak.ln-cu-v4.ibsgss.uk	123.188.232.40	80	ln-chaoyang-cu-v4.ip.zstaticcdn.com
 cdn	4	辽宁	移动	ln-cm-v4.ibsgss.uk	120.201.244.218	80	ln-cm-v4.ip.zstaticcdn.com	bak.ln-cm-v4.ibsgss.uk	221.180.166.1	80	ln.10086.cn
 cdn	4	吉林	电信	jl-ct-v4.ibsgss.uk	36.104.133.171	80	jl-ct-v4.ip.zstaticcdn.com	bak.jl-ct-v4.ibsgss.uk	36.97.235.3	443	jl.189.cn
 cdn	4	吉林	联通	jl-cu-v4.ibsgss.uk	119.51.251.185	80	jl-cu-v4.ip.zstaticcdn.com	bak.jl-cu-v4.ibsgss.uk	139.215.227.2	80	jl-changchun-cu-v4.ip.zstaticcdn.com
 cdn	4	吉林	移动	jl-cm-v4.ibsgss.uk	111.26.55.239	80	jl-cm-v4.ip.zstaticcdn.com	bak.jl-cm-v4.ibsgss.uk		80	cc-cm-v4.ip.zstaticcdn.com
-cdn	4	黑龙江	电信	hl-ct-v4.ibsgss.uk	42.185.158.177	80	hl-ct-v4.ip.zstaticcdn.com	bak.hl-ct-v4.ibsgss.uk	219.147.133.224	80	hl.189.cn
-cdn	4	黑龙江	联通	hl-cu-v4.ibsgss.uk	221.207.117.205	80	hl-cu-v4.ip.zstaticcdn.com	bak.hl-cu-v4.ibsgss.uk	122.156.220.108	80	hl-daqing-cu-v4.ip.zstaticcdn.com
+cdn	4	黑龙江	电信	hl-ct-v4.ibsgss.uk	42.101.49.92	80	hl-ct-v4.ip.zstaticcdn.com	bak.hl-ct-v4.ibsgss.uk	219.147.133.224	80	hl.189.cn
+cdn	4	黑龙江	联通	hl-cu-v4.ibsgss.uk	1.62.69.218	80	hl-cu-v4.ip.zstaticcdn.com	bak.hl-cu-v4.ibsgss.uk	122.156.220.108	80	hl-daqing-cu-v4.ip.zstaticcdn.com
 cdn	4	黑龙江	移动	hl-cm-v4.ibsgss.uk	111.42.192.157	80	hl-cm-v4.ip.zstaticcdn.com	bak.hl-cm-v4.ibsgss.uk		80	hrb-cm-v4.ip.zstaticcdn.com
-cdn	4	江苏	电信	js-ct-v4.ibsgss.uk	180.102.49.190	80	js-ct-v4.ip.zstaticcdn.com	bak.js-ct-v4.ibsgss.uk	117.62.239.129	80	js-nanjing-ct-v4.ip.zstaticcdn.com
-cdn	4	江苏	联通	js-cu-v4.ibsgss.uk	112.80.130.226	80	js-cu-v4.ip.zstaticcdn.com	bak.js-cu-v4.ibsgss.uk	112.86.231.59	80	js-nanjing-cu-v4.ip.zstaticcdn.com
-cdn	4	江苏	移动	js-cm-v4.ibsgss.uk	36.155.213.87	80	js-cm-v4.ip.zstaticcdn.com	bak.js-cm-v4.ibsgss.uk	36.133.24.129	80	js-wuxi-cm-v4.ip.zstaticcdn.com
+cdn	4	江苏	电信	js-ct-v4.ibsgss.uk	180.102.111.180	80	js-ct-v4.ip.zstaticcdn.com	bak.js-ct-v4.ibsgss.uk	117.62.239.129	80	js-nanjing-ct-v4.ip.zstaticcdn.com
+cdn	4	江苏	联通	js-cu-v4.ibsgss.uk	116.147.19.116	80	js-cu-v4.ip.zstaticcdn.com	bak.js-cu-v4.ibsgss.uk	112.86.231.59	80	js-nanjing-cu-v4.ip.zstaticcdn.com
+cdn	4	江苏	移动	js-cm-v4.ibsgss.uk	36.155.201.54	80	js-cm-v4.ip.zstaticcdn.com	bak.js-cm-v4.ibsgss.uk	36.133.24.128	80	js-wuxi-cm-v4.ip.zstaticcdn.com
 cdn	4	浙江	电信	zj-ct-v4.ibsgss.uk	183.131.147.4	80	zj-ct-v4.ip.zstaticcdn.com	bak.zj-ct-v4.ibsgss.uk	125.122.86.249	80	zj-hangzhou-ct-v4.ip.zstaticcdn.com
 cdn	4	浙江	联通	zj-cu-v4.ibsgss.uk	60.12.119.66	80	zj-cu-v4.ip.zstaticcdn.com	bak.zj-cu-v4.ibsgss.uk	116.148.187.12	80	zj-huzhou-cu-v4.ip.zstaticcdn.com
 cdn	4	浙江	移动	zj-cm-v4.ibsgss.uk	112.13.92.194	80	zj-cm-v4.ip.zstaticcdn.com	bak.zj-cm-v4.ibsgss.uk	36.133.95.129	80	zj-ningbo-cm-v4.ip.zstaticcdn.com
-cdn	4	安徽	电信	ah-ct-v4.ibsgss.uk	117.68.18.124	80	ah-ct-v4.ip.zstaticcdn.com	bak.ah-ct-v4.ibsgss.uk	117.68.126.249	80	ah-wuhu-ct-v4.ip.zstaticcdn.com
-cdn	4	安徽	联通	ah-cu-v4.ibsgss.uk	112.132.225.238	80	ah-cu-v4.ip.zstaticcdn.com	bak.ah-cu-v4.ibsgss.uk	218.104.71.170	80	ah-hefei-cu-v4.ip.zstaticcdn.com
-cdn	4	安徽	移动	ah-cm-v4.ibsgss.uk	39.145.18.117	80	ah-cm-v4.ip.zstaticcdn.com	bak.ah-cm-v4.ibsgss.uk	202.141.176.110	80	ah-hefei-cm-v4.ip.zstaticcdn.com
+cdn	4	安徽	电信	ah-ct-v4.ibsgss.uk	117.68.25.70	80	ah-ct-v4.ip.zstaticcdn.com	bak.ah-ct-v4.ibsgss.uk	117.68.126.249	80	ah-wuhu-ct-v4.ip.zstaticcdn.com
+cdn	4	安徽	联通	ah-cu-v4.ibsgss.uk	112.132.39.247	80	ah-cu-v4.ip.zstaticcdn.com	bak.ah-cu-v4.ibsgss.uk	218.104.71.170	80	ah-hefei-cu-v4.ip.zstaticcdn.com
+cdn	4	安徽	移动	ah-cm-v4.ibsgss.uk	39.145.18.66	80	ah-cm-v4.ip.zstaticcdn.com	bak.ah-cm-v4.ibsgss.uk	202.141.176.110	80	ah-hefei-cm-v4.ip.zstaticcdn.com
 cdn	4	福建	电信	fj-ct-v4.ibsgss.uk	106.126.9.253	80	fj-ct-v4.ip.zstaticcdn.com	bak.fj-ct-v4.ibsgss.uk	203.55.129.248	80	fj-fuzhou-ct-v4.ip.zstaticcdn.com
 cdn	4	福建	联通	fj-cu-v4.ibsgss.uk	36.248.48.211	80	fj-cu-v4.ip.zstaticcdn.com	bak.fj-cu-v4.ibsgss.uk	218.107.193.105	80	fj-xiamen-cu-v4.ip.zstaticcdn.com
 cdn	4	福建	移动	fj-cm-v4.ibsgss.uk	112.48.186.65	80	fj-cm-v4.ip.zstaticcdn.com	bak.fj-cm-v4.ibsgss.uk		80	fz-cm-v4.ip.zstaticcdn.com
 cdn	4	江西	电信	jx-ct-v4.ibsgss.uk	117.21.179.2	80	jx-ct-v4.ip.zstaticcdn.com	bak.jx-ct-v4.ibsgss.uk	117.21.249.187	443	jx.189.cn
 cdn	4	江西	联通	jx-cu-v4.ibsgss.uk	116.153.32.148	80	jx-cu-v4.ip.zstaticcdn.com	bak.jx-cu-v4.ibsgss.uk	113.195.207.112	80	jx-fuzhou-cu-v4.ip.zstaticcdn.com
 cdn	4	江西	移动	jx-cm-v4.ibsgss.uk	117.169.96.226	80	jx-cm-v4.ip.zstaticcdn.com	bak.jx-cm-v4.ibsgss.uk		80	nc-cm-v4.ip.zstaticcdn.com
-cdn	4	山东	电信	sd-ct-v4.ibsgss.uk	140.249.80.214	80	sd-ct-v4.ip.zstaticcdn.com	bak.sd-ct-v4.ibsgss.uk	182.40.97.247	80	sd-qingdao-ct-v4.ip.zstaticcdn.com
-cdn	4	山东	联通	sd-cu-v4.ibsgss.uk	61.179.131.126	80	sd-cu-v4.ip.zstaticcdn.com	bak.sd-cu-v4.ibsgss.uk	61.133.126.16	80	sd-binzhou-cu-v4.ip.zstaticcdn.com
-cdn	4	山东	移动	sd-cm-v4.ibsgss.uk	120.221.173.226	80	sd-cm-v4.ip.zstaticcdn.com	bak.sd-cm-v4.ibsgss.uk	36.133.120.128	80	sd-jinan-cm-v4.ip.zstaticcdn.com
+cdn	4	山东	电信	sd-ct-v4.ibsgss.uk	140.249.80.254	80	sd-ct-v4.ip.zstaticcdn.com	bak.sd-ct-v4.ibsgss.uk	182.40.97.247	80	sd-qingdao-ct-v4.ip.zstaticcdn.com
+cdn	4	山东	联通	sd-cu-v4.ibsgss.uk	61.179.132.225	80	sd-cu-v4.ip.zstaticcdn.com	bak.sd-cu-v4.ibsgss.uk	61.133.126.16	80	sd-binzhou-cu-v4.ip.zstaticcdn.com
+cdn	4	山东	移动	sd-cm-v4.ibsgss.uk	120.221.173.237	80	sd-cm-v4.ip.zstaticcdn.com	bak.sd-cm-v4.ibsgss.uk	36.133.120.128	80	sd-jinan-cm-v4.ip.zstaticcdn.com
 cdn	4	河南	电信	ha-ct-v4.ibsgss.uk	171.15.110.253	80	ha-ct-v4.ip.zstaticcdn.com	bak.ha-ct-v4.ibsgss.uk	1.194.160.249	80	ha-zhengzhou-ct-v4.ip.zstaticcdn.com
 cdn	4	河南	联通	ha-cu-v4.ibsgss.uk	221.15.71.2	80	ha-cu-v4.ip.zstaticcdn.com	bak.ha-cu-v4.ibsgss.uk	221.15.71.2	80	ha-luoyang-cu-v4.ip.zstaticcdn.com
-cdn	4	河南	移动	ha-cm-v4.ibsgss.uk	111.6.167.130	80	ha-cm-v4.ip.zstaticcdn.com	bak.ha-cm-v4.ibsgss.uk	36.133.36.128	80	ha-zhengzhou-cm-v4.ip.zstaticcdn.com
+cdn	4	河南	移动	ha-cm-v4.ibsgss.uk	111.6.167.130	80	ha-cm-v4.ip.zstaticcdn.com	bak.ha-cm-v4.ibsgss.uk	36.133.36.129	80	ha-zhengzhou-cm-v4.ip.zstaticcdn.com
 cdn	4	湖北	电信	hb-ct-v4.ibsgss.uk	111.172.211.216	80	hb-ct-v4.ip.zstaticcdn.com	bak.hb-ct-v4.ibsgss.uk	171.43.197.25	80	hb-wuhan-ct-v4.ip.zstaticcdn.com
-cdn	4	湖北	联通	hb-cu-v4.ibsgss.uk	220.202.13.144	80	hb-cu-v4.ip.zstaticcdn.com	bak.hb-cu-v4.ibsgss.uk	61.242.167.105	80	hb-ezhou-cu-v4.ip.zstaticcdn.com
+cdn	4	湖北	联通	hb-cu-v4.ibsgss.uk	220.202.13.176	80	hb-cu-v4.ip.zstaticcdn.com	bak.hb-cu-v4.ibsgss.uk	61.242.167.105	80	hb-ezhou-cu-v4.ip.zstaticcdn.com
 cdn	4	湖北	移动	hb-cm-v4.ibsgss.uk	111.47.131.86	80	hb-cm-v4.ip.zstaticcdn.com	bak.hb-cm-v4.ibsgss.uk		80	wh-cm-v4.ip.zstaticcdn.com
 cdn	4	湖南	电信	hn-ct-v4.ibsgss.uk	202.103.124.48	80	hn-ct-v4.ip.zstaticcdn.com	bak.hn-ct-v4.ibsgss.uk	175.6.215.252	80	hn-chenzhou-ct-v4.ip.zstaticcdn.com
 cdn	4	湖南	联通	hn-cu-v4.ibsgss.uk	42.49.82.120	80	hn-cu-v4.ip.zstaticcdn.com	bak.hn-cu-v4.ibsgss.uk	61.240.206.2	80	hn-changsha-cu-v4.ip.zstaticcdn.com
@@ -58,10 +58,10 @@ cdn	4	云南	联通	yn-cu-v4.ibsgss.uk	119.62.43.2	80	yn-cu-v4.ip.zstaticcdn.com
 cdn	4	云南	移动	yn-cm-v4.ibsgss.uk	218.202.0.254	80	yn-cm-v4.ip.zstaticcdn.com	bak.yn-cm-v4.ibsgss.uk		80	km-cm-v4.ip.zstaticcdn.com
 cdn	4	陕西	电信	sn-ct-v4.ibsgss.uk	113.141.78.120	80	sn-ct-v4.ip.zstaticcdn.com	bak.sn-ct-v4.ibsgss.uk	203.2.167.233	80	sn-xian-ct-v4.ip.zstaticcdn.com
 cdn	4	陕西	联通	sn-cu-v4.ibsgss.uk	124.89.67.172	80	sn-cu-v4.ip.zstaticcdn.com	bak.sn-cu-v4.ibsgss.uk	124.89.84.248	80	sn-xianyang-cu-v4.ip.zstaticcdn.com
-cdn	4	陕西	移动	sn-cm-v4.ibsgss.uk	218.200.36.30	80	sn-cm-v4.ip.zstaticcdn.com	bak.sn-cm-v4.ibsgss.uk	36.133.96.129	80	sn-xian-cm-v4.ip.zstaticcdn.com
+cdn	4	陕西	移动	sn-cm-v4.ibsgss.uk	218.200.36.30	80	sn-cm-v4.ip.zstaticcdn.com	bak.sn-cm-v4.ibsgss.uk	36.133.96.128	80	sn-xian-cm-v4.ip.zstaticcdn.com
 cdn	4	甘肃	电信	gs-ct-v4.ibsgss.uk	113.142.39.64	80	gs-ct-v4.ip.zstaticcdn.com	bak.gs-ct-v4.ibsgss.uk	125.75.103.73	80	gs-lanzhou-ct-v4.ip.zstaticcdn.com
 cdn	4	甘肃	联通	gs-cu-v4.ibsgss.uk	116.176.34.50	80	gs-cu-v4.ip.zstaticcdn.com	bak.gs-cu-v4.ibsgss.uk		80	lz-cu-v4.ip.zstaticcdn.com
-cdn	4	甘肃	移动	gs-cm-v4.ibsgss.uk	117.156.11.228	80	gs-cm-v4.ip.zstaticcdn.com	bak.gs-cm-v4.ibsgss.uk	211.139.91.37	80	gs.10086.cn
+cdn	4	甘肃	移动	gs-cm-v4.ibsgss.uk	117.157.235.170	80	gs-cm-v4.ip.zstaticcdn.com	bak.gs-cm-v4.ibsgss.uk	211.139.91.37	80	gs.10086.cn
 cdn	4	青海	电信	qh-ct-v4.ibsgss.uk	118.213.159.254	80	qh-ct-v4.ip.zstaticcdn.com	bak.qh-ct-v4.ibsgss.uk	223.221.8.11	443	qh.189.cn
 cdn	4	青海	联通	qh-cu-v4.ibsgss.uk	43.242.183.150	80	qh-cu-v4.ip.zstaticcdn.com	bak.qh-cu-v4.ibsgss.uk	139.170.157.88	80	qh-xining-cu-v4.ip.zstaticcdn.com
 cdn	4	青海	移动	qh-cm-v4.ibsgss.uk	111.44.158.47	80	qh-cm-v4.ip.zstaticcdn.com	bak.qh-cm-v4.ibsgss.uk		80	xn-cm-v4.ip.zstaticcdn.com
@@ -69,16 +69,16 @@ cdn	4	内蒙古	电信	nm-ct-v4.ibsgss.uk	219.148.161.68	80	nm-ct-v4.ip.zstaticc
 cdn	4	内蒙古	联通	nm-cu-v4.ibsgss.uk	116.95.24.2	80	nm-cu-v4.ip.zstaticcdn.com	bak.nm-cu-v4.ibsgss.uk	106.74.14.40	80	nm-huhehaote-cu-v4.ip.zstaticcdn.com
 cdn	4	内蒙古	移动	nm-cm-v4.ibsgss.uk	218.202.107.179	80	nm-cm-v4.ip.zstaticcdn.com	bak.nm-cm-v4.ibsgss.uk	36.134.88.65	80	nm-huhehaote-cm-v4.ip.zstaticcdn.com
 cdn	4	广西	电信	gx-ct-v4.ibsgss.uk	171.111.157.173	80	gx-ct-v4.ip.zstaticcdn.com	bak.gx-ct-v4.ibsgss.uk	116.8.128.2	443	gx.189.cn
-cdn	4	广西	联通	gx-cu-v4.ibsgss.uk	182.90.241.48	80	gx-cu-v4.ip.zstaticcdn.com	bak.gx-cu-v4.ibsgss.uk	182.91.12.76	80	gx-guilin-cu-v4.ip.zstaticcdn.com
+cdn	4	广西	联通	gx-cu-v4.ibsgss.uk	112.90.211.229	80	gx-cu-v4.ip.zstaticcdn.com	bak.gx-cu-v4.ibsgss.uk	182.91.12.76	80	gx-guilin-cu-v4.ip.zstaticcdn.com
 cdn	4	广西	移动	gx-cm-v4.ibsgss.uk	36.136.97.254	80	gx-cm-v4.ip.zstaticcdn.com	bak.gx-cm-v4.ibsgss.uk	112.54.48.41	443	gx.10086.cn
-cdn	4	西藏	电信	xz-ct-v4.ibsgss.uk	222.210.38.251	80	xz-ct-v4.ip.zstaticcdn.com	bak.xz-ct-v4.ibsgss.uk	113.62.183.157	80	xz-lasa-ct-v4.ip.zstaticcdn.com
+cdn	4	西藏	电信	xz-ct-v4.ibsgss.uk	182.242.211.254	80	xz-ct-v4.ip.zstaticcdn.com	bak.xz-ct-v4.ibsgss.uk	113.62.183.157	80	xz-lasa-ct-v4.ip.zstaticcdn.com
 cdn	4	西藏	联通	xz-cu-v4.ibsgss.uk	116.172.153.99	80	xz-cu-v4.ip.zstaticcdn.com	bak.xz-cu-v4.ibsgss.uk		80	lasa-cu-v4.ip.zstaticcdn.com
 cdn	4	西藏	移动	xz-cm-v4.ibsgss.uk	117.180.231.227	80	xz-cm-v4.ip.zstaticcdn.com	bak.xz-cm-v4.ibsgss.uk		80	lasa-cm-v4.ip.zstaticcdn.com
 cdn	4	宁夏	电信	nx-ct-v4.ibsgss.uk	222.75.44.145	80	nx-ct-v4.ip.zstaticcdn.com	bak.nx-ct-v4.ibsgss.uk	61.133.213.210	443	nx.189.cn
 cdn	4	宁夏	联通	nx-cu-v4.ibsgss.uk	42.63.59.199	80	nx-cu-v4.ip.zstaticcdn.com	bak.nx-cu-v4.ibsgss.uk	42.63.68.8	80	nx-yinchuan-cu-v4.ip.zstaticcdn.com
-cdn	4	宁夏	移动	nx-cm-v4.ibsgss.uk	111.51.76.215	80	nx-cm-v4.ip.zstaticcdn.com	bak.nx-cm-v4.ibsgss.uk	218.203.120.131	443	nx.10086.cn
+cdn	4	宁夏	移动	nx-cm-v4.ibsgss.uk	223.85.105.161	80	nx-cm-v4.ip.zstaticcdn.com	bak.nx-cm-v4.ibsgss.uk	218.203.120.131	443	nx.10086.cn
 cdn	4	新疆	电信	xj-ct-v4.ibsgss.uk	113.142.211.201	80	xj-ct-v4.ip.zstaticcdn.com	bak.xj-ct-v4.ibsgss.uk	120.71.61.247	80	xj-wulumuqi-ct-v4.ip.zstaticcdn.com
-cdn	4	新疆	联通	xj-cu-v4.ibsgss.uk	116.178.158.248	80	xj-cu-v4.ip.zstaticcdn.com	bak.xj-cu-v4.ibsgss.uk	124.88.196.248	80	xj-bayinguoleng-cu-v4.ip.zstaticcdn.com
+cdn	4	新疆	联通	xj-cu-v4.ibsgss.uk	101.207.252.227	80	xj-cu-v4.ip.zstaticcdn.com	bak.xj-cu-v4.ibsgss.uk	124.88.196.248	80	xj-bayinguoleng-cu-v4.ip.zstaticcdn.com
 cdn	4	新疆	移动	xj-cm-v4.ibsgss.uk	36.189.15.245	80	xj-cm-v4.ip.zstaticcdn.com	bak.xj-cm-v4.ibsgss.uk	221.181.13.25	443	xj.10086.cn
 cdn	4	北京	电信	bj-ct-v4.ibsgss.uk	106.37.68.13	80	bj-ct-v4.ip.zstaticcdn.com	bak.bj-ct-v4.ibsgss.uk	106.37.68.13	443	bj.189.cn
 cdn	4	北京	联通	bj-cu-v4.ibsgss.uk	221.222.185.232	80	bj-cu-v4.ip.zstaticcdn.com	bak.bj-cu-v4.ibsgss.uk	221.222.185.232	80	bj-cu-v4.ip.zstaticcdn.com
@@ -86,9 +86,9 @@ cdn	4	北京	移动	bj-cm-v4.ibsgss.uk	211.136.25.153	80	bj-cm-v4.ip.zstaticcdn.
 cdn	4	天津	电信	tj-ct-v4.ibsgss.uk	123.151.109.108	80	tj-ct-v4.ip.zstaticcdn.com	bak.tj-ct-v4.ibsgss.uk	221.238.15.10	443	tj.189.cn
 cdn	4	天津	联通	tj-cu-v4.ibsgss.uk	117.8.227.168	80	tj-cu-v4.ip.zstaticcdn.com	bak.tj-cu-v4.ibsgss.uk	117.8.227.168	80	tj-cu-v4.ip.zstaticcdn.com
 cdn	4	天津	移动	tj-cm-v4.ibsgss.uk	211.103.90.101	80	tj-cm-v4.ip.zstaticcdn.com	bak.tj-cm-v4.ibsgss.uk	117.131.199.193	443	117.131.199.193
-cdn	4	上海	电信	sh-ct-v4.ibsgss.uk	101.226.101.195	80	sh-ct-v4.ip.zstaticcdn.com	bak.sh-ct-v4.ibsgss.uk	101.95.52.34	80	sh.189.cn
+cdn	4	上海	电信	sh-ct-v4.ibsgss.uk	101.226.94.50	80	sh-ct-v4.ip.zstaticcdn.com	bak.sh-ct-v4.ibsgss.uk	101.95.52.35	80	sh.189.cn
 cdn	4	上海	联通	sh-cu-v4.ibsgss.uk	112.64.235.107	80	sh-cu-v4.ip.zstaticcdn.com	bak.sh-cu-v4.ibsgss.uk	112.64.235.107	80	sh-cu-v4.ip.zstaticcdn.com
-cdn	4	上海	移动	sh-cm-v4.ibsgss.uk	117.185.117.117	80	sh-cm-v4.ip.zstaticcdn.com	bak.sh-cm-v4.ibsgss.uk	117.185.117.117	80	sh-cm-v4.ip.zstaticcdn.com
+cdn	4	上海	移动	sh-cm-v4.ibsgss.uk	117.185.117.109	80	sh-cm-v4.ip.zstaticcdn.com	bak.sh-cm-v4.ibsgss.uk	117.185.117.109	80	sh-cm-v4.ip.zstaticcdn.com
 cdn	4	重庆	电信	cq-ct-v4.ibsgss.uk	119.84.169.36	80	cq-ct-v4.ip.zstaticcdn.com	bak.cq-ct-v4.ibsgss.uk	219.152.188.41	443	cq.189.cn
 cdn	4	重庆	联通	cq-cu-v4.ibsgss.uk	58.144.112.204	80	cq-cu-v4.ip.zstaticcdn.com	bak.cq-cu-v4.ibsgss.uk	58.144.112.204	80	cq-cu-v4.ip.zstaticcdn.com
 cdn	4	重庆	移动	cq-cm-v4.ibsgss.uk	120.226.150.252	80	cq-cm-v4.ip.zstaticcdn.com	bak.cq-cm-v4.ibsgss.uk	218.201.25.131	80	cq.10086.cn
