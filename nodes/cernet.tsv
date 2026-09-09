@@ -14,18 +14,18 @@ cernet2	6	江苏	CERNET2	cernet2-js-v6.ibsgss.uk	2001:da8:1007::9999	443	www.nju
 cernet	4	浙江	CERNET	cernet-zj-v4.ibsgss.uk	210.33.16.1	443	www.nbu.edu.cn				
 cernet2	6	浙江	CERNET2	cernet2-zj-v6.ibsgss.uk	2001:da8:e028:1000::122	443	www.nbu.edu.cn				
 cernet	4	安徽	CERNET	cernet-ah-v4.ibsgss.uk	210.45.240.198	443	www.hfut.edu.cn	bak.cernet-ah-v4.ibsgss.uk	210.45.96.212	443	www.ahmu.edu.cn
-cernet2	6	安徽	CERNET2	cernet2-ah-v6.ibsgss.uk	2001:250:5401:160::55	443	www.ahu.edu.cn	bak.cernet2-ah-v6.ibsgss.uk	2001:da8:d813:195::70	443	www.ahnu.edu.cn
+cernet2	6	安徽	CERNET2	cernet2-ah-v6.ibsgss.uk	2001:250:5401:160::55	443	www.ahu.edu.cn	bak.cernet2-ah-v6.ibsgss.uk	2001:da8:d813:195::72	443	www.ahnu.edu.cn
 cernet	4	福建	CERNET	cernet-fj-v4.ibsgss.uk	219.229.81.211	443	www.xmu.edu.cn				
 cernet2	6	福建	CERNET2	cernet2-fj-v6.ibsgss.uk	2001:da8:e800:251c::211	443	www.xmu.edu.cn				
 cernet	4	江西	CERNET	cernet-jx-v4.ibsgss.uk	219.229.232.50	443	www.jxust.edu.cn				
 cernet2	6	江西	CERNET2	cernet2-jx-v6.ibsgss.uk	2001:250:6c0b:6010::10:50	443	www.jxust.edu.cn				
 cernet	4	山东	CERNET	cernet-sd-v4.ibsgss.uk	202.194.7.118	443	www.sdu.edu.cn				
 cernet2	6	山东	CERNET2	cernet2-sd-v6.ibsgss.uk	2001:da8:7000:7:202:194:7:118	443	www.sdu.edu.cn				
-cernet	4	河南	CERNET	cernet-ha-v4.ibsgss.uk	202.196.64.194	443	www.zzu.edu.cn				
-cernet2	6	河南	CERNET2	cernet2-ha-v6.ibsgss.uk	2001:da8:5000:6c00::48	443	www.zzu.edu.cn				
+cernet	4	河南	CERNET	cernet-ha-v4.ibsgss.uk	202.196.64.48	443	www.zzu.edu.cn				
+cernet2	6	河南	CERNET2	cernet2-ha-v6.ibsgss.uk	2001:da8:5000:6c00::47	443	www.zzu.edu.cn				
 cernet	4	湖北	CERNET	cernet-hb-v4.ibsgss.uk	115.156.123.19	443	www.whu.edu.cn				
 cernet2	6	湖北	CERNET2	cernet2-hb-v6.ibsgss.uk	2001:250:4001:4::8	443	www.whu.edu.cn				
-cernet	4	湖南	CERNET	cernet-hn-v4.ibsgss.uk	202.197.224.18	443	www.csu.edu.cn	bak.cernet-hn-v4.ibsgss.uk	202.197.224.18	443	www.xtu.edu.cn
+cernet	4	湖南	CERNET	cernet-hn-v4.ibsgss.uk	202.197.61.57	443	www.csu.edu.cn	bak.cernet-hn-v4.ibsgss.uk	202.197.224.18	443	www.xtu.edu.cn
 cernet2	6	湖南	CERNET2	cernet2-hn-v6.ibsgss.uk	2001:250:4400:64::57	443	www.csu.edu.cn	bak.cernet2-hn-v6.ibsgss.uk	2001:da8:d00a:fffd::18	443	www.xtu.edu.cn
 cernet	4	广东	CERNET	cernet-gd-v4.ibsgss.uk	202.116.64.8	443	www.sysu.edu.cn				
 cernet2	6	广东	CERNET2	cernet2-gd-v6.ibsgss.uk	2001:da8:2000:2193::28	443	www.scut.edu.cn				
