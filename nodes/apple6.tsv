@@ -1,8 +1,7 @@
 type	family	province	isp	host	ip	port	target	backup_host	backup_ip	backup_port	backup_target
 applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:1005:603:3::21	443	mensura.cdn-apple.com				
-applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:3810:c:3::14	443	mensura.cdn-apple.com				
 applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:b000:718:3::18	443	mensura.cdn-apple.com				
-applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:2000:603:3::31	443	mensura.cdn-apple.com				
-applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:b000:718:3::19	443	mensura.cdn-apple.com				
+applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:3810:c:3::15	443	mensura.cdn-apple.com				
+applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:2000:603:3::32	443	mensura.cdn-apple.com				
 applecdn	6	深圳	移动	mensura.cdn-apple.com	2409:8c54:b010:29:3::d	443	mensura.cdn-apple.com				
 applecdn	6	重庆	移动	mensura.cdn-apple.com	2409:8760:1e81:56:3::1f	443	mensura.cdn-apple.com				
