@@ -1,28 +1,22 @@
 type	family	province	isp	host	ip	port	target	backup_host	backup_ip	backup_port	backup_target
 tos	4	北京	电信	tos-bj-ct-v4.ibsgss.uk	42.81.80.86	443	tos-cn-beijing.volces.com				
-tos	4	北京	联通	tos-bj-cu-v4.ibsgss.uk	119.250.10.100	443	tos-cn-beijing.volces.com	bak.tos-bj-cu-v4.ibsgss.uk	119.250.10.0	443	119.250.10.0
-tos	4	北京	联通	bak.tos-bj-cu-v4.ibsgss.uk	119.250.10.0	443	tos-cn-beijing.volces.com	bak2.tos-bj-cu-v4.ibsgss.uk	119.250.10.102	443	119.250.10.102
-tos	4	北京	联通	bak2.tos-bj-cu-v4.ibsgss.uk	119.250.10.102	443	tos-cn-beijing.volces.com	bak3.tos-bj-cu-v4.ibsgss.uk	221.194.175.109	443	221.194.175.109
+tos	4	北京	联通	tos-bj-cu-v4.ibsgss.uk	119.250.10.100	443	tos-cn-beijing.volces.com	bak.tos-bj-cu-v4.ibsgss.uk	119.250.10.102	443	119.250.10.102
+tos	4	北京	联通	bak.tos-bj-cu-v4.ibsgss.uk	119.250.10.102	443	tos-cn-beijing.volces.com	bak2.tos-bj-cu-v4.ibsgss.uk	119.250.10.0	443	119.250.10.0
+tos	4	北京	联通	bak2.tos-bj-cu-v4.ibsgss.uk	119.250.10.0	443	tos-cn-beijing.volces.com	bak3.tos-bj-cu-v4.ibsgss.uk	221.194.175.109	443	221.194.175.109
 tos	4	北京	联通	bak3.tos-bj-cu-v4.ibsgss.uk	221.194.175.109	443	tos-cn-beijing.volces.com				
 tos	4	北京	移动	tos-bj-cm-v4.ibsgss.uk	120.255.0.180	443	tos-cn-beijing.volces.com				
-tos	4	上海	电信	tos-sh-ct-v4.ibsgss.uk	180.97.50.1	443	tos-cn-shanghai.volces.com	bak.tos-sh-ct-v4.ibsgss.uk	180.97.50.130	443	180.97.50.130
-tos	4	上海	电信	bak.tos-sh-ct-v4.ibsgss.uk	180.97.50.130	443	tos-cn-shanghai.volces.com				
-tos	4	上海	联通	tos-sh-cu-v4.ibsgss.uk	116.147.21.1	443	tos-cn-shanghai.volces.com	bak.tos-sh-cu-v4.ibsgss.uk	116.147.21.130	443	116.147.21.130
-tos	4	上海	联通	bak.tos-sh-cu-v4.ibsgss.uk	116.147.21.130	443	tos-cn-shanghai.volces.com				
+tos	4	上海	电信	tos-sh-ct-v4.ibsgss.uk	180.97.50.130	443	tos-cn-shanghai.volces.com	bak.tos-sh-ct-v4.ibsgss.uk	180.97.50.1	443	180.97.50.1
+tos	4	上海	电信	bak.tos-sh-ct-v4.ibsgss.uk	180.97.50.1	443	tos-cn-shanghai.volces.com				
+tos	4	上海	联通	tos-sh-cu-v4.ibsgss.uk	116.147.21.130	443	tos-cn-shanghai.volces.com	bak.tos-sh-cu-v4.ibsgss.uk	116.147.21.1	443	116.147.21.1
+tos	4	上海	联通	bak.tos-sh-cu-v4.ibsgss.uk	116.147.21.1	443	tos-cn-shanghai.volces.com				
 tos	4	上海	移动	tos-sh-cm-v4.ibsgss.uk	36.151.164.131	443	tos-cn-shanghai.volces.com	bak.tos-sh-cm-v4.ibsgss.uk	36.151.164.132	443	36.151.164.132
 tos	4	上海	移动	bak.tos-sh-cm-v4.ibsgss.uk	36.151.164.132	443	tos-cn-shanghai.volces.com				
 tos	4	广东	电信	tos-gd-ct-v4.ibsgss.uk	14.119.67.1	443	tos-cn-guangzhou.volces.com	bak.tos-gd-ct-v4.ibsgss.uk	14.119.66.129	443	14.119.66.129
 tos	4	广东	电信	bak.tos-gd-ct-v4.ibsgss.uk	14.119.66.129	443	tos-cn-guangzhou.volces.com	bak2.tos-gd-ct-v4.ibsgss.uk	14.119.66.1	443	14.119.66.1
 tos	4	广东	电信	bak2.tos-gd-ct-v4.ibsgss.uk	14.119.66.1	443	tos-cn-guangzhou.volces.com				
-tos	4	广东	联通	tos-gd-cu-v4.ibsgss.uk	157.255.228.134	443	tos-cn-guangzhou.volces.com	bak.tos-gd-cu-v4.ibsgss.uk	157.255.228.103	443	157.255.228.103
-tos	4	广东	联通	bak.tos-gd-cu-v4.ibsgss.uk	157.255.228.103	443	tos-cn-guangzhou.volces.com	bak2.tos-gd-cu-v4.ibsgss.uk	157.255.228.102	443	157.255.228.102
+tos	4	广东	联通	tos-gd-cu-v4.ibsgss.uk	157.255.228.103	443	tos-cn-guangzhou.volces.com	bak.tos-gd-cu-v4.ibsgss.uk	157.255.228.134	443	157.255.228.134
+tos	4	广东	联通	bak.tos-gd-cu-v4.ibsgss.uk	157.255.228.134	443	tos-cn-guangzhou.volces.com	bak2.tos-gd-cu-v4.ibsgss.uk	157.255.228.102	443	157.255.228.102
 tos	4	广东	联通	bak2.tos-gd-cu-v4.ibsgss.uk	157.255.228.102	443	tos-cn-guangzhou.volces.com				
-tos	4	广东	移动	tos-gd-cm-v4.ibsgss.uk	183.232.151.141	443	tos-cn-guangzhou.volces.com	bak.tos-gd-cm-v4.ibsgss.uk	183.232.151.102	443	183.232.151.102
-tos	4	广东	移动	bak.tos-gd-cm-v4.ibsgss.uk	183.232.151.102	443	tos-cn-guangzhou.volces.com	bak2.tos-gd-cm-v4.ibsgss.uk	183.232.156.10	443	183.232.156.10
-tos	4	广东	移动	bak2.tos-gd-cm-v4.ibsgss.uk	183.232.156.10	443	tos-cn-guangzhou.volces.com	bak3.tos-gd-cm-v4.ibsgss.uk	112.47.9.244	443	112.47.9.244
-tos	4	广东	移动	bak3.tos-gd-cm-v4.ibsgss.uk	112.47.9.244	443	tos-cn-guangzhou.volces.com	bak4.tos-gd-cm-v4.ibsgss.uk	112.48.201.216	443	112.48.201.216
-tos	4	广东	移动	bak4.tos-gd-cm-v4.ibsgss.uk	112.48.201.216	443	tos-cn-guangzhou.volces.com	bak5.tos-gd-cm-v4.ibsgss.uk	112.48.236.253	443	112.48.236.253
-tos	4	广东	移动	bak5.tos-gd-cm-v4.ibsgss.uk	112.48.236.253	443	tos-cn-guangzhou.volces.com	bak6.tos-gd-cm-v4.ibsgss.uk	112.48.236.197	443	112.48.236.197
-tos	4	广东	移动	bak6.tos-gd-cm-v4.ibsgss.uk	112.48.236.197	443	tos-cn-guangzhou.volces.com	bak7.tos-gd-cm-v4.ibsgss.uk	112.48.236.196	443	112.48.236.196
-tos	4	广东	移动	bak7.tos-gd-cm-v4.ibsgss.uk	112.48.236.196	443	tos-cn-guangzhou.volces.com	bak8.tos-gd-cm-v4.ibsgss.uk	112.48.236.199	443	112.48.236.199
-tos	4	广东	移动	bak8.tos-gd-cm-v4.ibsgss.uk	112.48.236.199	443	tos-cn-guangzhou.volces.com				
+tos	4	广东	移动	tos-gd-cm-v4.ibsgss.uk	183.232.151.102	443	tos-cn-guangzhou.volces.com	bak.tos-gd-cm-v4.ibsgss.uk	183.232.151.141	443	183.232.151.141
+tos	4	广东	移动	bak.tos-gd-cm-v4.ibsgss.uk	183.232.151.141	443	tos-cn-guangzhou.volces.com	bak2.tos-gd-cm-v4.ibsgss.uk	183.232.156.10	443	183.232.156.10
+tos	4	广东	移动	bak2.tos-gd-cm-v4.ibsgss.uk	183.232.156.10	443	tos-cn-guangzhou.volces.com				
