@@ -21,7 +21,7 @@ cernet	4	江西	CERNET	cernet-jx-v4.ibsgss.uk	219.229.232.50	443	www.jxust.edu.c
 cernet2	6	江西	CERNET2	cernet2-jx-v6.ibsgss.uk	2001:250:6c0b:6010::10:50	443	www.jxust.edu.cn				
 cernet	4	山东	CERNET	cernet-sd-v4.ibsgss.uk	202.194.7.118	443	www.sdu.edu.cn				
 cernet2	6	山东	CERNET2	cernet2-sd-v6.ibsgss.uk	2001:da8:7000:7:202:194:7:118	443	www.sdu.edu.cn				
-cernet	4	河南	CERNET	cernet-ha-v4.ibsgss.uk	202.196.64.194	443	www.zzu.edu.cn				
+cernet	4	河南	CERNET	cernet-ha-v4.ibsgss.uk	202.196.64.48	443	www.zzu.edu.cn				
 cernet2	6	河南	CERNET2	cernet2-ha-v6.ibsgss.uk	2001:da8:5000:6c00::47	443	www.zzu.edu.cn				
 cernet	4	湖北	CERNET	cernet-hb-v4.ibsgss.uk	115.156.123.19	443	www.whu.edu.cn				
 cernet2	6	湖北	CERNET2	cernet2-hb-v6.ibsgss.uk	2001:250:4001:4::8	443	www.whu.edu.cn				
