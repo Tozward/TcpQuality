@@ -22,7 +22,7 @@ cernet2	6	江西	CERNET2	cernet2-jx-v6.ibsgss.uk	2001:250:6c0b:6010::10:50	443	w
 cernet	4	山东	CERNET	cernet-sd-v4.ibsgss.uk	202.194.7.118	443	www.sdu.edu.cn				
 cernet2	6	山东	CERNET2	cernet2-sd-v6.ibsgss.uk	2001:da8:7000:7:202:194:7:118	443	www.sdu.edu.cn				
 cernet	4	河南	CERNET	cernet-ha-v4.ibsgss.uk	202.196.64.48	443	www.zzu.edu.cn				
-cernet2	6	河南	CERNET2	cernet2-ha-v6.ibsgss.uk	2001:da8:5000:6c00::48	443	www.zzu.edu.cn				
+cernet2	6	河南	CERNET2	cernet2-ha-v6.ibsgss.uk	2001:da8:5000:6c00::47	443	www.zzu.edu.cn				
 cernet	4	湖北	CERNET	cernet-hb-v4.ibsgss.uk	115.156.123.19	443	www.whu.edu.cn				
 cernet2	6	湖北	CERNET2	cernet2-hb-v6.ibsgss.uk	2001:250:4001:4::8	443	www.whu.edu.cn				
 cernet	4	湖南	CERNET	cernet-hn-v4.ibsgss.uk	202.197.229.50	443	www.csu.edu.cn	bak.cernet-hn-v4.ibsgss.uk	202.197.229.50	443	www.xtu.edu.cn
@@ -56,8 +56,8 @@ cernet2	6	新疆	CERNET2	cernet2-xj-v6.ibsgss.uk	2001:250:1800:1997::4	443	www.x
 cernet	4	北京	CERNET	cernet-bj-v4.ibsgss.uk	101.6.15.66	443	www.tsinghua.edu.cn				
 cernet2	6	北京	CERNET2	cernet2-bj-v6.ibsgss.uk	2402:f000:1:402:101:6:15:66	443	www.tsinghua.edu.cn				
 cernet	4	天津	CERNET	cernet-tj-v4.ibsgss.uk	202.113.2.198	443	www.tju.edu.cn				
-cernet2	6	天津	CERNET2	cernet2-tj-v6.ibsgss.uk		443	www.tju.edu.cn				
-cernet	4	上海	CERNET	cernet-sh-v4.ibsgss.uk		443	www.sjtu.edu.cn				
-cernet2	6	上海	CERNET2	cernet2-sh-v6.ibsgss.uk		443	www.sjtu.edu.cn				
-cernet	4	重庆	CERNET	cernet-cq-v4.ibsgss.uk		443	www.cqu.edu.cn				
+cernet2	6	天津	CERNET2	cernet2-tj-v6.ibsgss.uk	2001:da8:a000:ab23::10	443	www.tju.edu.cn				
+cernet	4	上海	CERNET	cernet-sh-v4.ibsgss.uk	202.120.2.114	443	www.sjtu.edu.cn				
+cernet2	6	上海	CERNET2	cernet2-sh-v6.ibsgss.uk	2001:da8:8000:6181:202:120:2:114	443	www.sjtu.edu.cn				
+cernet	4	重庆	CERNET	cernet-cq-v4.ibsgss.uk	202.202.2.6	443	www.cqu.edu.cn				
 cernet2	6	重庆	CERNET2	cernet2-cq-v6.ibsgss.uk	2001:da8:c800:2::6	443	www.cqu.edu.cn				
